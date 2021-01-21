@@ -1,0 +1,12 @@
+import React from "react";
+import Input from "@material-ui/core/Input";
+
+const AddPost= () =>{
+    return(
+        <div>
+            <h2>AddPost</h2>
+<Input></Input>
+        </div>
+    )
+}
+export default AddPost

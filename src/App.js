@@ -11,7 +11,7 @@ import Posting from "./components/Posting";
 const theme = createMuiTheme({
     palette: {
         primary: {
-            main: '#b2dfdb',
+            main: '#e4405f',
         },
         secondary: {
             main: '#ffcdd2',

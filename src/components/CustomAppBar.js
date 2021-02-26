@@ -10,8 +10,10 @@ import MenuIcon from "@material-ui/core/MenuItem";
 import SearchIcon from '@material-ui/icons/Search';
 import InputBase from '@material-ui/core/InputBase';
 import {fade} from "@material-ui/core";
+import {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
+
     root: {
         flexGrow: 1,
     },
@@ -87,10 +89,11 @@ const CustomAppBar = () => {
                         }}
                         inputProps={{ 'aria-label': 'search' }}
                     />
-                </div>
+                </div> <Link to="/posting">
                 <IconButton >
+
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
-                </IconButton>
+                </IconButton></Link>
                 <Button color="inherit">Login</Button>
             </Toolbar>
         </AppBar>

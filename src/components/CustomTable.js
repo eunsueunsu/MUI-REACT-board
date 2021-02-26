@@ -1,4 +1,5 @@
 import React from "react";
+
 import {Button, makeStyles, TableContainer, TablePagination} from "@material-ui/core";
 import Table from "@material-ui/core/Table";
 import TableHead from "@material-ui/core/TableHead";
@@ -11,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
     table: {
         margin: theme.spacing(1),
         marginTop : theme.spacing(2),
-
     },
     pagination : {
         justifyContent:"center",
@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
 
     }
 }))
-
 
 const CustomTable = () => {
     const classes = useStyles();

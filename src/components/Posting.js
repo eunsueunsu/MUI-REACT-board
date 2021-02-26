@@ -8,13 +8,21 @@ import {Button, makeStyles} from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
 
 const useStyles = makeStyles((theme) => ({
+
+
+    mainDiv: {
+        textAlign: "center"
+    },
     element: {
         margin: theme.spacing(1),
-        width: "90%"
+        width: "90%",
+        maxWidth: "500px",
+        textAlign: "center"
     },
-
-
-
+    btnPrimary: {
+        width: "50%",
+        textAlign: "center"
+    }
 }))
 
 
@@ -22,7 +30,7 @@ const Posting = () => {
 
     const classes = useStyles();
     return (
-        <div width="100%">
+        <div className={classes.mainDiv}>
             <h2>AddPost</h2>
             {/*<InputLabel htmlFor="standard-adornment-title">Title</InputLabel>*/}
             {/*<Input id="standard-adornment-title" label="Standard" placeholder="Title"></Input>*/}
@@ -39,16 +47,14 @@ const Posting = () => {
                     className={classes.element}
                     id="outlined-textarea"
                     label="content"
-                    placeholder="Placeholder"
+                    // placeholder="Placeholder"
                     multiline
                     variant="outlined"
-                    rowsMin={30}
+                    rows={30}
                 />
-                <Button color="primary" className={classes.element}>SAVE
+                <Button color="primary" className={`classes.element ${classes.btnPrimary}`}>SAVE
                 </Button>
             </FormControl>
-
-
         </div>
     )
 }

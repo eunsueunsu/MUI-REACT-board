@@ -31,7 +31,7 @@ const Posting = () => {
     const classes = useStyles();
     return (
         <div className={classes.mainDiv}>
-            <h2>AddPost</h2>
+            {/*<h2>AddPost</h2>*/}
             {/*<InputLabel htmlFor="standard-adornment-title">Title</InputLabel>*/}
             {/*<Input id="standard-adornment-title" label="Standard" placeholder="Title"></Input>*/}
 
@@ -47,12 +47,11 @@ const Posting = () => {
                     className={classes.element}
                     id="outlined-textarea"
                     label="content"
-                    // placeholder="Placeholder"
                     multiline
                     variant="outlined"
                     rows={30}
                 />
-                <Button color="primary" className={`classes.element ${classes.btnPrimary}`}>SAVE
+                <Button color="primary" className={classes.element}>SAVE
                 </Button>
             </FormControl>
         </div>

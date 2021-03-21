@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         display:'flex',
         marginTop : theme.spacing(2),
 
-    }
+    },
 }))
 
 const CustomTable = () => {
@@ -34,7 +34,7 @@ const CustomTable = () => {
                 </TableHead>
                 <TableBody>
                     <TableRow>
-                        <TableCell><a href="#"> 첫번째글 첫번째글첫번째글첫번째글첫번째글첫번째글첫번째글첫번째글</a></TableCell>
+                        <TableCell><a href="/detail"> 첫번째글 첫번째글첫번째글첫번째글첫번째글첫번째글첫번째글첫번째글</a></TableCell>
                         <TableCell>
                             <Button variant="outlined" color="secondary" size="small"
                                     className={classes.table}>#React</Button>

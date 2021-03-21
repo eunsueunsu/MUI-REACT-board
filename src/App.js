@@ -9,6 +9,7 @@ import CustomTable from "./components/CustomTable";
 import AddPost from "./components/AddPost";
 import Posting from "./components/Posting";
 import {Component} from "react";
+import ContentDetail from "./components/ContentDetail";
 
 const theme = createMuiTheme({
     palette: {
@@ -38,10 +39,8 @@ const theme = createMuiTheme({
     }
 })
 
-class App extends Component{
-    render(){
+function App(){
         return (
-
             <MuiThemeProvider theme={theme}>
                 <BrowserRouter>
                 <div>
@@ -66,18 +65,21 @@ class App extends Component{
                         {/*</Grid>*/}
                     </Grid>
                 </div>
+                    <Grid padding={4}>
                     <Switch>
                         <Route exact path="/" component={CustomTable}/>
                         <Route path="/posting" component={Posting}/>
+                        <Route path="/detail" component={ContentDetail}/>
+
                     </Switch>
+                    </Grid>
                 </BrowserRouter>
             </MuiThemeProvider>
 
-        );
-    }
+        )
 }
 
-
+//
 // function CustomTable({match}){
 //     return <Grid item xs={12} style={{padding: 30}}>
 //         <h1>Basic Board Sample</h1>
@@ -85,7 +87,7 @@ class App extends Component{
 //
 //     </Grid>
 // }
-//
+
 // function App() {
 //
 // }
